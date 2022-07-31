@@ -364,12 +364,15 @@ button8.place(relx=0.20, rely=0.7)
 
 #===================Page13===========================
 
-button7 = tk.Button(frame13, text="Quit", command=window.destroy, bg="#afeeee", height=3, width=20)
+label5_text = tk.Label(frame13, text="Thank you for participating and answering this survey. \n Please make sure you have answered all questions apporpriately and accurately.\n Your results will be collected anonymously and further used\n to provide our society with a cleaner and more efficient\n waste management system, thus benefiting both\n your health and the environment", bg="#dcdcdc", font=("fonts1", 40))
+label5_text.place(relx=0.03, rely=0.2)
+
+button7 = tk.Button(frame13, text="Complete Survey", command=window.destroy, bg="#afeeee", height=3, width=20)
 button7['font'] = fonts
-button7.place(relx=0.43, rely=0.7)
+button7.place(relx=0.5, rely=0.7)
 
 button8 = tk.Button(frame13, text="<-- Back", command=lambda: show_frame(frame12), bg="#afeeee", height=3, width=20)
 button8['font'] = fonts
-button8.place(relx=0.20, rely=0.7)
+button8.place(relx=0.33, rely=0.7)
 
 window.mainloop()
